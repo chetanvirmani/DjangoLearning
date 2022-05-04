@@ -1,0 +1,42 @@
+pip install -r requirements.txt
+This will install every pip in the requirements.txt file
+
+django-admin startproject learning_log . #The period will come after a space
+The above line is to start the django project. It is the step 1
+
+py manage.py migrate
+This will create the database db.sqlite3
+
+py manage.py runserver
+This will start web server on the computer (The computer will be acting as both the front end and the back end of the server)
+The page will be local to the machine. No one else (no other computer) can access this.
+
+Ctrl-Break (ctrl c in terminal to deactivate)
+
+manage.py startapp MainApp
+To start an app
+
+under the MainApp folder > models.py
+
+add MainApp in the line 33 of the settings.py file under learning log folder
+
+Terminal > py manage.py makemigrations MainApp
+
+py manage.py migrate
+
+py manage.py createsuperuser
+
+make an admin username, don't need email, REMEMBER PASSWORD (#Hansika24)
+
+register models under admin.py under MainApp
+
+add /admin at the end of the url running on the web to access the admin page.
+
+Add topics
+
+New models are added under models.py
+
+After making changes to models.py the next step is to do migrations
+
+
+Run the debugger > Ctrl+click on the url > Go to entrys > add 
